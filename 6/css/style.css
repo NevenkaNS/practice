@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3%;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+header img {
+  height: 90%;
+}
+header #menu-small {
+  display: none;
+}
+header #close-menu {
+  display: none;
+}
+header nav {
+  width: 40%;
+  margin: 1% 0% 1% 1%;
+}
+header ul {
+  list-style: none;
+  display: table-row;
+  margin: 2% 0% 2% 2%;
+}
+header ul li {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 2%;
+  width: 20%;
+  color: hsl(236deg, 13%, 42%);
+  text-align: center;
+}
+header ul li:hover {
+  color: hsl(5deg, 85%, 63%);
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+}
+.main div .desktop {
+  width: 95%;
+  height: 50%;
+}
+.main div .mobile {
+  display: none;
+}
+.main .read {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.main .read h1 {
+  font-family: "Inter", sans-serif;
+  line-height: 90%;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  width: 45%;
+  padding-right: 7%;
+  margin-top: 2%;
+}
+.main .read p {
+  color: hsl(236deg, 13%, 42%);
+  width: 45%;
+  font-size: large;
+}
+.main .read p a {
+  background-color: hsl(5deg, 85%, 63%);
+  text-decoration: none;
+  font-size: small;
+  letter-spacing: 3px;
+  color: hsl(36deg, 100%, 99%);
+  padding: 3% 7% 3% 7%;
+}
+.main .read p a:hover {
+  background-color: hsl(240deg, 100%, 5%);
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+  width: 65%;
+  height: fit-content;
+}
+.sidebar div {
+  margin: 2%;
+  border-bottom: 0.2px solid hsl(233deg, 8%, 79%);
+}
+.sidebar h2 {
+  color: hsl(35deg, 77%, 62%);
+  padding: 5% 5% 0% 5%;
+  font-size: 35px;
+}
+.sidebar p {
+  color: hsl(233deg, 8%, 79%);
+  font-size: small;
+  padding-bottom: 8%;
+  padding-left: 5%;
+}
+.sidebar h4 {
+  padding: 8% 5% 5% 5%;
+}
+
+.sidebar div:last-child {
+  border-bottom: none;
+}
+
+.bottom {
+  display: flex;
+}
+.bottom div {
+  width: 45%;
+  display: flex;
+}
+.bottom div img {
+  height: 60%;
+}
+.bottom div div {
+  display: inline-block;
+  width: 50%;
+}
+.bottom div div h2 {
+  color: hsl(233deg, 8%, 79%);
+  font-size: xx-large;
+}
+.bottom div div h4 {
+  font-weight: 800;
+  padding: 10% 0% 10% 0%;
+}
+.bottom div div h4:hover {
+  color: hsl(5deg, 85%, 63%);
+  cursor: pointer;
+}
+.bottom div div p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: small;
+}
+
+@media screen and (max-width: 500px) {
+  header img {
+    height: 30%;
+    width: 15%;
+  }
+  header #small-nav {
+    display: flex;
+    width: 70%;
+    background-color: hsl(36deg, 100%, 99%);
+  }
+  header #small-nav #menu-small {
+    display: inline-block;
+    padding-top: 2%;
+    margin-left: 75%;
+    width: 20%;
+    height: 90%;
+  }
+  header #small-nav #close-menu {
+    padding-top: 2%;
+    margin-left: 70%;
+    width: 15%;
+    height: 90%;
+    background-color: hsl(36deg, 100%, 99%);
+  }
+  header nav {
+    margin-top: 15%;
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background-color: hsl(36deg, 100%, 99%);
+    width: 80%;
+    height: 100vh;
+  }
+  header nav ul {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  header nav ul li {
+    display: block;
+    width: 100%;
+    height: 10%;
+    text-align: left;
+  }
+  .main {
+    display: block;
+  }
+  .main div .desktop {
+    display: none;
+  }
+  .main div .mobile {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+  }
+  .main .read {
+    display: block;
+  }
+  .main .read h1 {
+    width: 100%;
+    font-size: 40px;
+    padding-top: 3%;
+  }
+  .main .read p {
+    width: 100%;
+    padding: 5% 0% 20% 0%;
+    font-size: medium;
+  }
+  .sidebar {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  .sidebar div {
+    width: 90%;
+  }
+  .sidebar h4 {
+    font-size: large;
+  }
+  .sidebar p {
+    font-size: medium;
+  }
+  .bottom {
+    display: block;
+  }
+  .bottom div {
+    width: 100%;
+  }
+  .bottom div img {
+    width: 30%;
+    height: 20%;
+    margin: 5% 5% 5% 0%;
+  }
+  .bottom div div {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .bottom div div h4 {
+    padding: 5% 0% 5% 0%;
+    font-size: large;
+  }
+  .bottom div div p {
+    font-size: medium;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
