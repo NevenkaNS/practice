@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class>
+
+<header>
+
+  <h1>calc</h1>
+
+  <div class="themes">
+
+    <p>THEME</p>
+
+    <div>
+      <div id="numbers">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div> 
+
+      <div id="toggle">
+        <span id="1" class="choose active">.</span>
+        <span id="2" class="choose">.</span>
+        <span id="3" class="choose">.</span>
+      </div>
+    </div>
+   
+  </div>
+
+</header>
+
+<div id="display">
+  <div data-previous class="previous"></div>
+  <div data-current class="current"></div>
+
+</div>
+
+<section >
+  <button data-number class="num">7</button>
+  <button data-number class="num">8</button>
+  <button data-number class="num">9</button>
+  <button data-delete class="del">DEL</button>
+  <button data-number class="num">4</button>
+  <button data-number class="num">5</button>
+  <button data-number class="num">6</button>
+  <button data-operation class="add">+</button>
+  <button data-number class="num">1</button>
+  <button data-number class="num">2</button>
+  <button data-number class="num">3</button>
+  <button data-operation class="sub">-</button>
+  <button data-number class="dot">.</button>
+  <button data-number class="num">0</button>
+  <button data-operation class="divide">/</button>
+  <button data-operation class="multiply">x</button>
+  <button data-reset class="reset">RESET</button>
+  <button data-equals class="equal">=</button>
+
+</section>
+
+<script src="js/script.app.js"></script>
+  <script src="js/script.theme.js"></script>
+</body>
+</html>
